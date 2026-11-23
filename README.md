@@ -1,6 +1,6 @@
 # swift-velocity
 
-Use this package when a value is velocity: how fast, along one direction. Start from `Velocity`, a kind of quantity of swift-quantity, and make an amount with `Velocity.metresPerSecond(_:)`; it is a `Velocity.Value<Scalar>`, a `Tagged<Velocity, Scalar>`.
+Use this package when a value is velocity: how fast, along one direction. Start from `Velocity`, a kind of quantity of swift-quantity, and make an amount with `Velocity.amount(_:)`; it is a `Velocity.Value<Scalar>`, a `Tagged<Velocity, Scalar>`.
 
 ## Laws
 

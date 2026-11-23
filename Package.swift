@@ -17,7 +17,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/swift-atoms/swift-quantity.git", branch: "main"),
         .package(url: "https://github.com/swift-atoms/swift-length.git", branch: "main"),
-        .package(url: "https://github.com/swift-atoms/swift-time.git", branch: "main")
+        .package(url: "https://github.com/swift-atoms/swift-time.git", branch: "main"),
     ],
     targets: [
         .target(
@@ -25,7 +25,7 @@ let package = Package(
             dependencies: [
                 .product(name: "Quantity", package: "swift-quantity"),
                 .product(name: "Length", package: "swift-length"),
-                .product(name: "Time", package: "swift-time")
+                .product(name: "Time", package: "swift-time"),
             ]
         ),
         .testTarget(

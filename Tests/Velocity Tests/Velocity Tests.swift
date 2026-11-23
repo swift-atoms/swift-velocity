@@ -1,5 +1,5 @@
-import Velocity
 import Testing
+import Velocity
 
 enum `Velocity Tests` {}
 
@@ -10,7 +10,7 @@ extension `Velocity Tests` {
         }
 
         @Test func `An amount given in metres per second keeps its scalar`() {
-            #expect(Velocity.metresPerSecond(2.5).underlying == 2.5)
+            #expect(Velocity.amount(2.5).underlying == 2.5)
         }
     }
 
@@ -21,7 +21,7 @@ extension `Velocity Tests` {
 
         @Test func `A length over a time, and back`() {
             let speed = Length.metres(6.0) / Time.Duration.seconds(2.0)
-            #expect(speed == Velocity.metresPerSecond(3.0))
+            #expect(speed == Velocity.amount(3.0))
             #expect(speed * Time.Duration.seconds(2.0) == Length.metres(6.0))
         }
     }

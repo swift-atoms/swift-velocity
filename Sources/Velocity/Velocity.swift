@@ -8,10 +8,4 @@ extension Velocity: Quantity.Kind {
 extension Velocity {
     /// An amount of velocity, its scalar in metres per second.
     public typealias Value<Scalar> = Tagged<Velocity, Scalar>
-
-    /// An amount of velocity given in metres per second.
-    @inlinable
-    public static func metresPerSecond<Scalar>(_ scalar: Scalar) -> Value<Scalar> {
-        amount(scalar)
-    }
 }
