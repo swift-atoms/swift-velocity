@@ -16,13 +16,13 @@ extension `Velocity Tests` {
 
     @Suite struct `A velocity is a length over a time` {
         @Test func `Its dimension balances`() {
-            #expect(Velocity.dimension == Length.dimension / Time.Duration.dimension)
+            #expect(Velocity.dimension == Measure<1, Space.Physical>.dimension / Time.Duration.dimension)
         }
 
         @Test func `A length over a time, and back`() {
-            let speed = Length.metres(6.0) / Time.Duration.seconds(2.0)
+            let speed = Space.Physical.metres(6.0) / Time.Duration.seconds(2.0)
             #expect(speed == Velocity.amount(3.0))
-            #expect(speed * Time.Duration.seconds(2.0) == Length.metres(6.0))
+            #expect(speed * Time.Duration.seconds(2.0) == Space.Physical.metres(6.0))
         }
     }
 }

@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/swift-atoms/swift-quantity.git", branch: "main"),
-        .package(url: "https://github.com/swift-atoms/swift-length.git", branch: "main"),
+        .package(url: "https://github.com/swift-atoms/swift-space.git", branch: "main"),
         .package(url: "https://github.com/swift-atoms/swift-time.git", branch: "main"),
     ],
     targets: [
@@ -24,7 +24,7 @@ let package = Package(
             name: "Velocity",
             dependencies: [
                 .product(name: "Quantity", package: "swift-quantity"),
-                .product(name: "Length", package: "swift-length"),
+                .product(name: "Space", package: "swift-space"),
                 .product(name: "Time", package: "swift-time"),
             ]
         ),
