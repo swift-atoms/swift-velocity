@@ -1,0 +1,8 @@
+description: "Velocity for Swift: how fast, in metres per second, as a kind of quantity."
+topics:
+  - primitives
+  - quantity
+  - physics
+homepage: "https://swift-institute.org"
+readme:
+  family: E
